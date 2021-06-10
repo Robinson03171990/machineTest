@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <hr>
+        <form [formGroup]="RegisterForm">
+            <div class="w-100 input-field">
+                <label>Name</label>
+                <input type="text" formControlName="username" [ngClass]="{'red':nameError}">
+                <div class="field-error">{{nameError}}</div>
+            </div>
+            <div class="w-100 input-field">
+                <label>Your email address</label>
+                <input type="text" formControlName="email" [ngClass]="{'red':emailError}">
+                <div class="field-error">{{emailError}}</div>
+            </div>
+            <div class="w-100 rela input-field">
+                <label>Password</label>
+                <input autocomplete="off" type="password" [ngClass]="{'red':passwordError}" formControlName="password">
+                <div class="field-error">{{passwordError}}</div>
+            </div> 
+            <div class="w-100 rela input-field">
+                <label>Con-Password</label>
+                <input autocomplete="off" type="password" [ngClass]="{'red':passwordError}" formControlName="conpassword">
+                <div class="field-error">{{passwordError}}</div>
+            </div> 
+            <div class="w-100 input-field">
+                <label>Phone</label>
+                <input type="text" formControlName="phone" [ngClass]="{'red':nameError}">
+                <div class="field-error">{{phoneError}}</div>
+            </div>
+            <div class="w-100 button-container">
+                <button type="submit" class="login-btn" (click)="Register()">Register</button>
+            </div>
+           </form>
+        <hr> 
+      </div>
+</body>
+</html>

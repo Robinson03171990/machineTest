@@ -1,0 +1,65 @@
+body{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: teal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 10% 0px 0px 25%;
+    width: 50%;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.7)
+}
+
+.login-btn {
+    background-color: teal;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+    opacity: 0.8;
+}
+
+
+input[type='password']
+{
+  width: 96%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: whitesmoke; 
+}
+
+
+input[type='password']:focus
+{
+    background-color: #ddd;
+    outline: none;
+}
+
+input[type='text']
+{
+  width: 96%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: whitesmoke; 
+}
+
+input[type='text']:focus
+{
+    background-color: #ddd;
+    outline: none;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <hr>
+        <form [formGroup]="loginForm" #f>
+            <div class="w-100 input-field">
+                <label>Your email address</label>
+                <input type="text" formControlName="email" [ngClass]="{'red':emailError}">
+                <div class="field-error">{{emailError}}</div>
+            </div>
+            <div class="w-100 rela input-field">
+                <label>Password</label>
+                <input autocomplete="off" type="password" [ngClass]="{'red':passwordError}" formControlName="password">
+                <div class="field-error">{{passwordError}}</div>
+            </div> 
+            <div class="w-100 button-container">
+                <a class="forgot" routerLink="#" >Forgot password?</a> | 
+                <a class="forgot" (click)="register()" >Register</a>
+                <button type="submit" class="login-btn" (click)="login()">Login</button>
+            </div>
+           </form>
+    
+           
+        <hr> 
+      </div>
+</body>
+</html>
+
+
